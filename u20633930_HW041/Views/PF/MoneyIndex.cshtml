@@ -1,0 +1,76 @@
+﻿@model IEnumerable<u20633930_HW041.Models.Money>
+
+@{
+    ViewBag.Title = "MoneyIndex";
+}
+
+<h2>MoneyIndex</h2>
+
+<button class="btn btn-success" onclick="window.location.href = '@Url.Action("AddMoney","PF")'">New Donation</button>
+<br/>
+<br/>
+
+<table class="table table-bordered bg-warning" >
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDGID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDGNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Currency)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDGID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDGNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Currency)
+        </td>
+        <td>
+            <button class="btn btn-primary" onclick="window.location.href = '@Url.Action("EditM","PF",new {Id = item._DType})'">Edit Donation</button>
+            <br/>
+            <button class="btn btn-danger" onclick="window.location.href = '@Url.Action("DeleteM","PF", new { Id = item._DType})'">Delete Donation</button>
+        </td>
+    </tr>
+}
+
+</table>

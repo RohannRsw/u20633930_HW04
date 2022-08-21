@@ -1,0 +1,72 @@
+﻿@model List<u20633930_HW041.Models.PovertyFighter>
+
+@{
+    ViewBag.Title = "PovertyFighter Home Page";
+}
+
+<h2>PovertyFighter</h2>
+
+<div class="container-fluid col-lg-offset-2 text-center">
+    <div class="row">
+        <div class=" col-lg-6">
+            <div class="card" style="width: 18rem;background-color:#e4d5d5 !important;padding:10px;border-radius:20px">
+                <img class="card-img-top" src="~/Content/Images/Money.png" height="150" width="150">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Money</b></h5>
+                    <p class="card-text"><b>Click the button down below to make a Donation of Money towards World Relief!</b></p>
+                    <button class="btn btn-success" onclick="window.location.href = '@Url.Action("MoneyIndex","PF")'" style="border-radius:20px !important">Money View</button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-lg-6">
+            <div class="card" style="width: 18rem; background-color: #e4d5d5 !important; padding: 10px; border-radius: 20px">
+                <img class="card-img-top" src="~/Content/Images/Clothes.png" height="150" width="150">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Clothes</b></h5>
+                    <p class="card-text"><b>Click the button down below to make a Donation of Clothes towards World Relief!</b></p>
+                    <button class="btn btn-success" onclick="window.location.href = '@Url.Action("ClothesIndex","PF")'" style="border-radius:20px !important">Clothes View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container-fluid col-lg-offset-2 text-center">
+    <div class="row">
+        <div class=" col-lg-6">
+            <div class="card" style="width: 18rem; background-color: #e4d5d5 !important; padding: 10px; border-radius: 20px">
+                <img class="card-img-top" src="~/Content/Images/Food.png" height="150" width="150">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Food</b></h5>
+                    <p class="card-text"><b>Click the button down below to make a Donation of Food towards World Relief!</b></p>
+                    <button class="btn btn-success" onclick="window.location.href = '@Url.Action("FoodIndex","PF")'" style="border-radius:20px !important">Food View</button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-lg-6">
+            <div class="card" style="width: 18rem; background-color: #e4d5d5 !important; padding: 10px; border-radius: 20px">
+                <img class="card-img-top" src="~/Content/Images/World-Relief-logo.png" height="150" width="150">
+                <div class="card-body">
+                    <h5 class="card-title"><b>World Relief</b></h5>
+                    <p class="card-text"><b>Click the button down below to gather more information about the newly designed strategy of World Relief!</b></p>
+                    <button class="btn btn-success" onclick="window.location.href = '@Url.Action("NPOIndex","NPO")'" style="border-radius:20px !important">World Relief View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Boostrap Grid System-->
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-lg-6">
+
+        </div>
+        <div class=" col-lg-6">
+
+        </div>
+    </div>
+</div>
+<br />
+
+
+

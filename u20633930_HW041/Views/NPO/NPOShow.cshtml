@@ -1,0 +1,73 @@
+﻿@model IEnumerable<u20633930_HW041.Models.NPO>
+
+@{
+    ViewBag.Title = "NPOShow";
+}
+
+<h2>NPOShow</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NPOName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Founded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Purpose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxIDNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NPOImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMail)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NPOName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Founded)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Purpose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxIDNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NPOImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EMail)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    <h1><b>STRATEGY</b></h1>
+    My strategy for World Relief is the following :
+    Design a program called the POVERTYFIGHTERS and advertise the program to their best ability to spread word about the program and their company World Relief.
+    World Relief will gain a lot of attention and people will want to contribute towards their amazing mission and purpose in solving their fight against Poverty.
+    To become a POVERTYFIGHTER member, people can give donations in three following ways :
+    <ul>
+
+        Donations of Money.
+        Donations of Clothes.
+        Donations of Food.
+    </ul>
+    Designing and implementing this program will be great for World Relief, as they will receive numerous donations from kind hearted people all around the world.
+    Each Donation will go a long way in helping World Relief solve their purpose for SDG 1 : "No Poverty."
+</p>
+
